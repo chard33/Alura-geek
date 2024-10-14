@@ -1,23 +1,25 @@
+const express = require('express');
 const jsonServer = require('json-server');
 const path = require('path');
-const express = require('express'); // Necesitamos express para manejar el archivo HTML
 
-const server = jsonServer.create();
-const router = jsonServer.router('db.json'); // Aquí defines tu archivo db.json con los datos de la Fake API
+const app = express();
+const router = jsonServer.router('db.json'); // Archivo db.json con los datos
 const middlewares = jsonServer.defaults();
 
-// Servir el archivo HTML (index.html)
-server.use(express.static(path.join(__dirname, '../'))); // Sirve archivos estáticos desde la raíz (donde está index.html)
+// Middleware de JSON Server
+app.use(middlewares);
 
-// Usar los middlewares por defecto de JSON Server
-server.use(middlewares);
+// Servir el archivo HTML estático
+app.use(express.static(path.join(__dirname, '../')));
 
-// Rutas de la API basada en db.json
-server.use(router);
+// Rutas de la API
+app.use('/api', router);
 
-// Arrancar el servidor
-server.listen(3000, () => {
-  console.log(`JSON Server is running on port 3000`);
+// Ruta para el index.html
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, '../index.html'));
 });
 
-module.exports = server;
+// Exportar la aplicación para serverless
+module.exports = app;
+
