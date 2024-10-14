@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Alura Geek</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="./scripts/index.js" defer type="module"></script>
+    <script src="./scripts/mostrar.js" defer type="module"></script>
+    <script src="./scripts/crear.js" defer type="module"></script>
+    <script src="./scripts/cargarOpc.js" defer type="module"></script>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="./assets/logo.png" alt="Logo">
+    </header>
+    <main>
+        <section class="productos">
+            <h1>Mis Productos</h1>
+            <div class="cont-cards">
+                <ul class="list-cards">
+
+                </ul>
+            </div>
+        </section>
+        <section class="formulario">
+            <h1>Agregar Producto</h1>
+            <form>
+                <input type="text" placeholder="Nombre..." required data-nom>
+                <input type="text" placeholder="Precio..." required data-pre>
+                <select data-img>
+
+                </select>
+                <div>
+                    <button class="enviar">Enviar</button>
+                    <button class="limpiar">Limpiar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <img class="fot-img" src="./assets/logo.png" alt="Logo">
+        <p>Desarrollado por Carlos Miranda</p>
+        <p>Alura Latam 2024</p>
+    </footer>
+</body>
+
+</html>
