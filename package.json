@@ -1,7 +1,7 @@
 {
   "name": "desafio-alura-geek",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "api/server.js",
   "scripts": {
     "start": "node api/server.js"
   },
