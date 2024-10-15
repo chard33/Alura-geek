@@ -11,6 +11,8 @@ async function crearCarta(evt) {
     const imagen = document.querySelector("[data-img]")
 
     index.consulApiPost(nombre, precio, imagen[imagen.selectedIndex].getAttribute("data-url"))
+
+    window.location.href = "https://alura-geek-ten.vercel.app/"
 }
 
 formulario.addEventListener("submit", crearCarta)
