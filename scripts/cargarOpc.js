@@ -3,10 +3,7 @@ async function cargaOpc() {
 
     try {
 
-        const consulta = await fetch("https://api-alura-geek-wheat.vercel.app/imagenes", {
-            method: 'GET',  // También podría ser 'POST', 'HEAD'
-            mode: 'no-cors',
-        })
+        const consulta = await fetch("https://api-alura-geek-wheat.vercel.app/imagenes")
 
         const lista = document.querySelector("[data-img]")
 
