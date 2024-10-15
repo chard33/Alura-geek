@@ -3,7 +3,10 @@ const url = "https://api-alura-geek-n7j2z9506-char33s-projects.vercel.app/cartas
 
 async function consulApiGet() {
   try {
-    const consulta = await fetch(url)
+    const consulta = await fetch(url, {
+      method: 'GET',  // También podría ser 'POST', 'HEAD'
+      mode: 'no-cors',
+    })
 
     return consulta.json()
 
@@ -19,6 +22,7 @@ async function consulApiPost(tit, pre, img) {
       // mode: 'cors', no-cors, *cors, same-origin
       // cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
       // credentials: 'same-origin', // include, *same-origin, omit
+      mode: 'no-cors',
       headers: {
         'Content-Type': 'application/json'
         // 'Content-Type': 'application/x-www-form-urlencoded',
@@ -45,6 +49,7 @@ async function consulApiDel(id) {
 
     const consulta = await fetch(`${url}/${id}`, {
       method: "DELETE",
+      mode: 'no-cors',
       headers: {
         'Content-Type': 'application/json'
       }
