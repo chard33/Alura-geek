@@ -1,5 +1,5 @@
 
-const url = "https://api-alura-geek-n7j2z9506-char33s-projects.vercel.app/cartas"
+const url = "https://api-alura-geek-wheat.vercel.app/cartas"
 
 async function consulApiGet() {
   try {
