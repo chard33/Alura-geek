@@ -7,6 +7,8 @@ async function consulApiGet() {
       mode: no-cors
     })
 
+    console.log(consulta.json())
+
     return consulta.json()
 
   } catch (error) {
