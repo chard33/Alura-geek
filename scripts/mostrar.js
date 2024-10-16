@@ -18,7 +18,7 @@ async function mostrarInfo() {
           <p>${carta.titulo}</p>
           <div class="card-container--value">
             <p>$ ${carta.precio}</p>
-            <a href="#" id="${carta.id}"><img src="${carta.icono}" /></a>
+            <a href="#" id="${carta.id}"><img src="./assets/icnDel.png" /></a>
           </div>
         </div>
       </div>`;

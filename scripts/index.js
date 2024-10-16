@@ -3,11 +3,9 @@ const url = "https://apitest-six-jet.vercel.app/cartas"
 
 async function consulApiGet() {
   try {
-    const consulta = await fetch(url, {
-      mode: no-cors
-    })
+    const consulta = await fetch(url)
 
-    console.log(consulta.json())
+    console.log(consulta.json)
 
     return consulta.json()
 
@@ -32,8 +30,7 @@ async function consulApiPost(tit, pre, img) {
       body: JSON.stringify({
         titulo: tit,
         precio: pre,
-        imagen: img,
-        icono: "./assets/icnDel.png"
+        imagen: img
       }) // body data type must match "Content-Type" header
     });
 
