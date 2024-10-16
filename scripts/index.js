@@ -3,7 +3,9 @@ const url = "https://apitest-six-jet.vercel.app/cartas"
 
 async function consulApiGet() {
   try {
-    const consulta = await fetch(url)
+    const consulta = await fetch(url, {
+      mode: no-cors
+    })
 
     return consulta.json()
 
