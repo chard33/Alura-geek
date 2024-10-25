@@ -3,7 +3,7 @@ async function cargaOpc() {
 
     try {
 
-        const consulta = await fetch("https://apitest-six-jet.vercel.app/imagenes")
+        const consulta = await fetch("https://apitestlocal.azurewebsites.net/imagenes")
 
         const lista = document.querySelector("[data-img]")
 

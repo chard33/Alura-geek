@@ -12,7 +12,7 @@ async function crearCarta(evt) {
 
     index.consulApiPost(nombre, precio, imagen[imagen.selectedIndex].getAttribute("data-url"))
 
-    window.location.href = "https://alura-geek-ten.vercel.app/"
+    //window.location.href = "https://alura-geek-ten.vercel.app/"
 }
 
 formulario.addEventListener("submit", crearCarta)

@@ -1,5 +1,5 @@
 
-const url = "https://apitest-six-jet.vercel.app/cartas"
+const url = "https://apitestlocal.azurewebsites.net/cartas"
 
 async function consulApiGet() {
   try {
