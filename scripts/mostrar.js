@@ -48,7 +48,7 @@ function agregareventos() {
 
       index.consulApiDel(id);
 
-      //window.location.href = "https://alura-geek-ten.vercel.app/"
+      window.location.href = "https://alura-geek-ten.vercel.app/"
     }
   });
 }
