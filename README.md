@@ -2,7 +2,7 @@
 
 Este proyecto es parte del Desafio Alura Geek, en el cual se implementará un sistema para la gestión de elementos geek a través de un formulario. Los usuarios podrán crear, visualizar y eliminar elementos directamente desde la interfaz de la página web.
 
-⚠️ **Nota:** Debido a los costos, la base de datos tarda en iniciar 2 a 3 minutos desde el ingreso a la pagina.
+⚠️ **Nota:** La base de datos tarda en iniciar 2 a 3 minutos desde el ingreso a la pagina.
 
 ## Funcionalidades
 
